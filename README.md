@@ -1,2 +1,4 @@
 # dotfiles
-Configs
+
+- vim-plug
+- nvim-cmp
