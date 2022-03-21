@@ -17,6 +17,9 @@ Plug 'morhetz/gruvbox'
 " Indent lines
 Plug 'lukas-reineke/indent-blanklines.nvim'
 
+" Status line
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 set completeopt=menu,menuone,noselect
@@ -40,6 +43,7 @@ set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
+set noshowmode
 
 " ---------- LINE NUMBERS ---------- "
 set number
