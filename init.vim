@@ -1,3 +1,27 @@
+" ---------- PLUGINS --------------- "
+call plug#begin()
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
+" Themes
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+set completeopt=menu,menuone,noselect
+
+" ---------- GENERAL --------------- "
+
+colorscheme gruvbox
 set showmatch               " show matching 
 set mouse=v                 " middle-click paste with 
 set hlsearch                " highlight search 
@@ -15,7 +39,6 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 
-
 " ---------- LINE NUMBERS ---------- "
 set number
 highlight LineNr ctermfg=green
@@ -23,26 +46,6 @@ set relativenumber
 set rnu
 hi LineNrAbove guifg=grey ctermfg=grey
 hi LineNrBelow guifg=grey ctermfg=grey
-
-
-" ---------- PLUGINS --------------- "
-call plug#begin()
-
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
-" For vsnip users.
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
-
-call plug#end()
-
-set completeopt=menu,menuone,noselect
-
 
 " ---------- AUTOCOMPLETE (VIM-CMP) --------------- "
 lua <<EOF
