@@ -1,6 +1,4 @@
-set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
-" set ignorecase              " case insensitive 
 set mouse=v                 " middle-click paste with 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
@@ -9,7 +7,7 @@ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the r
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
-set wildmode=longest,list   " get bash-like tab completions
+" set wildmode=longest,list   " get bash-like tab completions
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
@@ -17,6 +15,8 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 
+
+" ---------- LINE NUMBERS ---------- "
 set number
 highlight LineNr ctermfg=green
 set relativenumber
@@ -25,7 +25,9 @@ hi LineNrAbove guifg=grey ctermfg=grey
 hi LineNrBelow guifg=grey ctermfg=grey
 
 
+" ---------- PLUGINS --------------- "
 call plug#begin()
+
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -37,22 +39,12 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
-" For luasnip users.
-" Plug 'L3MON4D3/LuaSnip'
-" Plug 'saadparwaiz1/cmp_luasnip'
-
-" For ultisnips users.
-" Plug 'SirVer/ultisnips'
-" Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-
-" For snippy users.
-" Plug 'dcampos/nvim-snippy'
-" Plug 'dcampos/cmp-snippy'
-
 call plug#end()
 
 set completeopt=menu,menuone,noselect
 
+
+" ---------- AUTOCOMPLETE (VIM-CMP) --------------- "
 lua <<EOF
   -- Setup nvim-cmp.
   local cmp = require'cmp'
