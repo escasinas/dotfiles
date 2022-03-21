@@ -15,7 +15,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'morhetz/gruvbox'
 
 " Indent lines
-Plug 'lukas-reineke/indent-blanklines.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Status line
 Plug 'vim-airline/vim-airline'
