@@ -1,6 +1,6 @@
 # dotfiles
 
-# Neovim
+## Neovim
 ### vim-plug
 Repo: https://github.com/junegunn/vim-plug
 
