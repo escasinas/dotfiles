@@ -23,13 +23,16 @@ Plug 'vim-airline/vim-airline'
 " NERDTree
 Plug 'preservim/nerdtree'
 
+" Toggle terminal
+Plug 'akinsho/toggleterm.nvim'
+
 call plug#end()
 
 set completeopt=menu,menuone,noselect
 
 
 " ---------- MAPPINGS --------------- "
-nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree | wincmd p " Start NERDTree and put the cursor back in the other window.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif " Close the tab if NERDTree is the only window remaining in it.
@@ -176,3 +179,15 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
+
+" ---------- TOGGLE TERMINAL ---------- "
+let g:toggleterm_terminal_mapping = '<C-t>'
+" or manually...
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+
+" By applying the mappings this way you can pass a count to your
+" mapping to open a specific window.
+" For example: 2<C-t> will open terminal 2
+nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
