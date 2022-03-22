@@ -61,7 +61,7 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 set noshowmode
-
+set showtabline=2
 
 " ---------- LINE NUMBERS ---------- "
 set number
