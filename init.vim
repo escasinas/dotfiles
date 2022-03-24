@@ -183,13 +183,13 @@ lua <<EOF
 EOF
 
 " ---------- TOGGLE TERMINAL ---------- "
-let g:toggleterm_terminal_mapping = '<C-t>'
+let g:toggleterm_terminal_mapping = '<C-x>'
 " or manually...
 autocmd TermEnter term://*toggleterm#*
-      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+      \ tnoremap <silent><c-x> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 
 " By applying the mappings this way you can pass a count to your
 " mapping to open a specific window.
-" For example: 2<C-t> will open terminal 2
-nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
+" For example: 2<C-x> will open terminal 2
+nnoremap <silent><c-x> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+inoremap <silent><c-x> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
