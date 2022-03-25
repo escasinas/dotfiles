@@ -1,4 +1,6 @@
-" ---------- PLUGINS --------------- "
+" ------------------------------------------------------------------- "
+" PLUGINS
+" ------------------------------------------------------------------- "
 call plug#begin()
 
 " Autocomplete
@@ -31,7 +33,9 @@ call plug#end()
 set completeopt=menu,menuone,noselect
 
 
-" ---------- MAPPINGS --------------- "
+" ------------------------------------------------------------------- "
+" MAPPINGS
+" ------------------------------------------------------------------- "
 nnoremap <C-n> :noh<CR> " stop highlighting
 
 " NERDTree settings
@@ -47,7 +51,9 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 
-" ---------- GENERAL --------------- "
+" ------------------------------------------------------------------- "
+" GENERAL
+" ------------------------------------------------------------------- "
 colorscheme gruvbox
 set showmatch               " show matching 
 set mouse=v                 " middle-click paste with 
@@ -68,7 +74,9 @@ set ttyfast                 " Speed up scrolling in Vim
 set noshowmode
 set showtabline=2
 
-" ---------- LINE NUMBERS ---------- "
+" ------------------------------------------------------------------- "
+" LINE NUMBERS
+" ------------------------------------------------------------------- "
 set number
 highlight LineNr ctermfg=green
 set relativenumber
@@ -77,7 +85,9 @@ hi LineNrAbove guifg=grey ctermfg=grey
 hi LineNrBelow guifg=grey ctermfg=grey
 
 
-" ---------- TAB NUMBERS ----------- "
+" ------------------------------------------------------------------- "
+" TAB NUMBERS
+" ------------------------------------------------------------------- "
 fu! MyTabLabel(n)
 let buflist = tabpagebuflist(a:n)
 let winnr = tabpagewinnr(a:n)
@@ -112,7 +122,9 @@ endfu
 set tabline=%!MyTabLine()
 
 
-" ---------- AUTOCOMPLETE (VIM-CMP) --------------- "
+" ------------------------------------------------------------------- "
+" AUTOCOMPLETE (VIM-CMP)
+" ------------------------------------------------------------------- "
 lua <<EOF
   -- Setup nvim-cmp.
   local cmp = require'cmp'
@@ -182,7 +194,9 @@ lua <<EOF
   }
 EOF
 
-" ---------- TOGGLE TERMINAL ---------- "
+" ------------------------------------------------------------------- "
+" TOGGLE TERMINAL
+" ------------------------------------------------------------------- "
 let g:toggleterm_terminal_mapping = '<C-x>'
 " or manually...
 autocmd TermEnter term://*toggleterm#*
