@@ -1,4 +1,8 @@
-# Neovim
+# Configs
+- `/etc/X11/xorg.conf.d/99-libinput-custom-config.conf`
+- `~/.config/nvim/init.vim`
+
+## Neovim
 ### vim-plug
 Repo: https://github.com/junegunn/vim-plug
 
