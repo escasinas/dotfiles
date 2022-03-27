@@ -39,6 +39,7 @@ set completeopt=menu,menuone,noselect
 nnoremap <C-n> :noh<CR> " stop highlighting
 
 " NERDTree settings
+nnoremap <C-t> :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree | wincmd p " Start NERDTree and put the cursor back in the other window.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif " Close the tab if NERDTree is the only window remaining in it.
