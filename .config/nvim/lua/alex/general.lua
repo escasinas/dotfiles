@@ -15,4 +15,7 @@ cmd([[highlight LineNrBelow guifg=grey]])
 set.shiftwidth = 4
 
 -- Editing
+cmd('set noshowmode')
 set.scrolloff = 5
+set.ttyfast = true
+set.mouse = 'a'
