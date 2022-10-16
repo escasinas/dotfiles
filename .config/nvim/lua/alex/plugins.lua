@@ -7,8 +7,14 @@ return require('packer').startup(
 	-- Packer Package Manager
 	use 'wbthomason/packer.nvim'
 
+	-- Icons
+	use 'kyazdani42/nvim-web-devicons'
+
 	-- Colorscheme
 	use 'folke/tokyonight.nvim'
+
+	-- Transparent background
+	use 'xiyaowong/nvim-transparent'
 
 	-- Toggle term
 	use 'akinsho/toggleterm.nvim'
@@ -17,6 +23,13 @@ return require('packer').startup(
 	use {
 	    'nvim-lualine/lualine.nvim',
 	    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
+
+	-- Bufferline for tabs 
+	use {
+	    'akinsho/bufferline.nvim',
+	    tag = "v2.*", 
+	    requires = 'kyazdani42/nvim-web-devicons'
 	}
 
 	-- Nvim Tree

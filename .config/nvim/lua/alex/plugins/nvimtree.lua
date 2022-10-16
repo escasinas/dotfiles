@@ -1,15 +1,24 @@
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
+  open_on_setup = true,
+  open_on_setup_file = true,
+  open_on_tab = true,
   view = {
     adaptive_size = true,
     mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
+	list = {
+	    { key = "u", action = "dir_up" },
+	    { key = "t", action = "tabnew" },
+	    { key = "<C-]>", action = "" },
+	},
     },
   },
   renderer = {
     group_empty = true,
+    indent_width = 2,
+    indent_markers = {
+	enable = true
+    }
   },
   filters = {
     dotfiles = true,
