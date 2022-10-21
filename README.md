@@ -2,10 +2,10 @@
 
 ## Distro
 
-OS: Fedora Linux 36  
-DE: KDE Plasma  
-WM: KWin (kwin-tiling)  
-Terminal: kitty  
+**OS:** Fedora Linux 36  
+**DE:** KDE Plasma  
+**WM:** KWin (kwin-tiling)  
+**Terminal:** kitty  
 
 #### Setup
 **kwin-tiling**
