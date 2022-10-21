@@ -4,7 +4,7 @@
 
 **OS:** Fedora Linux 36  
 **DE:** KDE Plasma  
-**WM:** KWin (kwin-tiling)  
+**WM:** KWin (+ kwin-tiling)  
 **Terminal:** kitty  
 
 #### Setup
