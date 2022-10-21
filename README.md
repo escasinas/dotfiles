@@ -1,6 +1,6 @@
 # Dotfiles
 
-## Distro
+## System
 
 **OS:** Fedora Linux 36  
 **DE:** KDE Plasma  
