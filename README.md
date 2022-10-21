@@ -29,4 +29,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 A patched font from https://www.nerdfonts.com/font-downloads
 
+Install the font into `/usr/share/fonts/` or `~/.local/share/fonts/`
+
 #### Plugins
