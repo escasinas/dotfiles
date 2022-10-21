@@ -8,6 +8,14 @@ WM: KWin (kwin-tiling)
 Terminal: kitty  
 
 #### Setup
+**kwin-tiling**
+1. Install kwin-tiling (https://github.com/kwin-scripts/kwin-tiling)
+```
+git clone https://github.com/kwin-scripts/kwin-tiling.git
+cd kwin-tiling/
+plasmapkg2 --type kwinscript -i .
+```
+2. Activate `kcmshell5 kcm_kwin_scripts`
 
 ## Neovim
 
