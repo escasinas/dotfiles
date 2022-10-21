@@ -1,5 +1,7 @@
 # Dotfiles
 
+## Neovim
+
 ### Requirements
 
 Packer to install nvim plugins
