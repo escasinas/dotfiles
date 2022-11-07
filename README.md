@@ -6,6 +6,7 @@
 **DE:** KDE Plasma  
 **WM:** KWin (+ kwin-tiling)  
 **Terminal:** kitty  
+**Editor:** neovim    
 
 #### Setup
 **kwin-tiling**
