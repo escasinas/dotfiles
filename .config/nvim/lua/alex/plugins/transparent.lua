@@ -9,5 +9,9 @@ require('transparent').setup({
       "NvimTreeVertSplit",
       "NvimTreeWinSeparator",
       "NvimTreeCursorColumn",
+
+      "BufferLineFill",
+      "BufferLineOffsetSeparator",
+      "BufferLineTabClose",
   }
 })
