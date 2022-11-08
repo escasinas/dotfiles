@@ -12,7 +12,7 @@ map('n', '<C-x>', ':x<CR>')
 
 -- Edit and New tab
 map('n', '<C-e>', ':e ')
-map('n', '<C-t>', ':tabnew ')
+map('n', '<C-t>', ':$tabnew ')
 
 -- Next and previous tab
 map('n', '<C-]>', ':tabnext<CR>')
