@@ -15,8 +15,8 @@ map('n', '<C-e>', ':e ')
 map('n', '<C-t>', ':$tabnew ')
 
 -- Next and previous tab
-map('n', '<C-]>', ':tabnext<CR>')
-map('n', '<C-[>', ':tabprevious<CR>')
+map('n', '<C-.>', ':tabnext<CR>')
+map('n', '<C-,>', ':tabprevious<CR>')
 
 -- Pane navigation
 map('n', '<C-h>', '<C-W>h')
