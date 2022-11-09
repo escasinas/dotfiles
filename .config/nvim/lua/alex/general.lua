@@ -12,7 +12,10 @@ cmd([[highlight LineNr guifg=lightgreen]])
 cmd([[highlight LineNrBelow guifg=grey]])
 
 -- Syntax
+set.tabstop = 4
+set.softtabstop = 4
 set.shiftwidth = 4
+set.expandtab = true
 
 -- Editing
 cmd('set noshowmode')
